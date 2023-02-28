@@ -1,6 +1,7 @@
 package gymhum.de;
 
 public class Schiffe {
+    //laenge definiert die besetzten Felder
     int laenge;
     
     public Schiffe(int laenge){

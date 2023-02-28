@@ -4,6 +4,7 @@ public class Feld {
     
     boolean istFrei;
     boolean zustand;
+    
 
     public Feld(){
         setIstFrei(true);

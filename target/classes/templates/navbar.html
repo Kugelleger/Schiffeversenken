@@ -17,6 +17,8 @@
               <a class="nav-link" th:href="@{/?activePage=home}">Home</a>
           </li>
 
+          
+
           <li th:if="${activePage == 'personen'}" class="nav-item">
             <a class="nav-link active" th:href="@{/personen}">Personen</a>
           </li>
@@ -38,6 +40,12 @@
               <a class="nav-link" th:href="@{/spiel}">4-Gewinnt</a>
           </li>
 
+          <li th:if="${activePage == 'schiffeversenken'}" class="nav-item">
+            <a class="nav-link active" th:href="@{/schiffeversenken}">Schiffeversenken</a>
+          </li>
+          <li th:unless="${activePage == 'schiffeversenken'}" class="nav-item">
+              <a class="nav-link" th:href="@{/schiffeversenken}">Schiffeversenken</a>
+          </li>
 
         </ul>
       </div>
